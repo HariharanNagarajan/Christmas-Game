@@ -1,0 +1,37 @@
+
+<div *ngIf = "formDisplay">
+
+<form action = "#" class="form-3">
+  <p class="clearfix">
+      <label for="login">Username</label>
+      <input type="text" placeholder="Enter EmployeeID" (change) = displayName(UserID.value) #UserID required>
+  </p>
+  <p class="clearfix">
+      <label for="password">Password</label>
+      <input type="password" placeholder="EmpID@DDMM" #pwd required>
+  </p>
+
+
+  <p class="clearfix">
+    <button type ="button" (click) = "validateUser(UserID.value, pwd.value)">My response</button>
+  </p>
+
+
+
+  <div *ngIf = "isDisplay">
+    <p class="clearfix">
+
+      <input type="text" placeholder="Enter number 1 - 18" #fav_no required>
+    </p>
+    <p class="clearfix">
+      <a routerLink = "/first" class="link_button2" (click) = "childButton(fav_no.value,UserID.value)">Know Child</a>
+      <!--<button (click) = "childButton()"> Know child </button> -->
+    </p>
+  </div>
+</form>
+
+</div>
+<!--
+<app-first child_name = "{{child_name}}"></app-first>
+-->
+<router-outlet></router-outlet>

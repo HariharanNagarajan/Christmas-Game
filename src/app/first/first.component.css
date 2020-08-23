@@ -1,0 +1,29 @@
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  background-repeat: no-repeat;
+}
+
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 500%;
+  background-color: white;
+  color: rgb(85, 245, 11);
+
+}
+
+.top-centered {
+  position: absolute;
+  top: 8px;
+  left: 400px;
+  background-color: white;
+  font-size: 500%;
+  color: rgb(245, 181, 6);
+
+}
